@@ -1,0 +1,12 @@
+.instruction-card {
+  display: none;
+}
+
+.form .header-text {
+  display: block;
+}
+
+.form .user-header-input {
+  display: none;
+  position: absolute;
+}
