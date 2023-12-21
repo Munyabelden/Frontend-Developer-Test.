@@ -53,13 +53,6 @@ const escape = (event) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  showInstructions;
-  clearInput;
-  handleTextInput;
-  handleUserTextInput;
-  createHeader;
-  escape;
-
   textInput.addEventListener('input', (event) => {
     showInstructions(event.target.value.trim());
   });
