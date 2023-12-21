@@ -43,7 +43,7 @@ const handleUserTextInput = (event) => {
 };
 
 const escape = (event) => {
-  if (event.key === 'Escape'){
+  if (event.key === 'Escape') {
     clearInput(userTextInput);
     userTextInput.style.display = 'none';
     textInput.style.display = 'block';
@@ -77,5 +77,5 @@ module.exports = {
   handleTextInput,
   handleUserTextInput,
   createHeader,
-  escape
+  escape,
 };
