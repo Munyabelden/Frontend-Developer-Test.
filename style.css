@@ -225,6 +225,7 @@ input::placeholder {
   margin-left: 20px;
   padding: 10px;
   box-shadow: 0 5px 5px 5px rgb(158, 158, 158);
+  height: 280px;
 }
 
 .instruction-title {
