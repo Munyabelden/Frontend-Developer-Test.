@@ -4,8 +4,8 @@ const {
   handleTextInput,
   handleUserTextInput,
   createHeader,
-  escape
-} = require('./index');
+  escape,
+} = require('./index.js');
 
 document.body.innerHTML = `
   <div class="user-header"></div>
@@ -24,7 +24,7 @@ describe('showInstructions function', () => {
 
       showInstructions('/');
       expect(instructions.style.display).toBe('block');
-    })
+    });
   });
 
   test('it hides instructions when inputValue is not "/"', () => {
@@ -59,13 +59,13 @@ describe('handleTextInput function', () => {
       const userTextInput = document.querySelector('.user-header-input');
       const instructions = document.querySelector('.instruction-card');
       const textInput = document.querySelector('#header-text-input');
-  
+
       handleTextInput({ target: { value: '/1' } });
-  
+
       expect(userTextInput.style.display).toBe('block');
       expect(instructions.style.display).toBe('none');
       expect(textInput.style.display).toBe('none');
-    })
+    });
   });
 });
 
@@ -74,10 +74,10 @@ describe('handleUserTextInput function', () => {
     document.addEventListener('DOMContentLoaded', () => {
       const userHeader = document.querySelector('.user-header');
       const userTextInput = document.querySelector('.user-header-input');
-  
+
       userTextInput.value = 'Test Header Text';
       handleUserTextInput({ key: 'Enter', target: { value: 'Test Header Text' } });
-  
+
       const createdHeader = userHeader.querySelector('h1');
       expect(createdHeader.textContent).toBe('Test Header Text');
       expect(userTextInput.style.display).toBe('none');
@@ -93,7 +93,7 @@ describe('createHeader function', () => {
 
       createHeader('Test Header');
       const createdHeader = userHeader.querySelector('h1');
-  
+
       expect(createdHeader).not.toBeNull();
       expect(createdHeader.textContent).toBe('Test Header');
     });
