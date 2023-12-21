@@ -6,25 +6,6 @@ const textInput = document.querySelector('#header-text-input');
 const instructions = document.querySelector('.instruction-card');
 const userTextInput = document.querySelector('.user-header-input');
 
-document.addEventListener('DOMContentLoaded', () => {
-  showInstructions;
-  clearInput;
-  handleTextInput;
-  handleUserTextInput;
-  createHeader;
-  escape;
-
-  textInput.addEventListener('input', (event) => {
-    showInstructions(event.target.value.trim());
-  });
-
-  textInput.addEventListener('input', handleTextInput);
-
-  userTextInput.addEventListener('keypress', handleUserTextInput);
-
-  document.addEventListener('keydown', escape);
-});
-
 const showInstructions = (inputValue) => {
   instructions.style.display = (inputValue === '/' || inputValue === '/1') ? 'block' : 'none';
 }
@@ -72,6 +53,25 @@ const createHeader = (input) => {
   h1Element.textContent = input;
   userHeader.appendChild(h1Element);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  showInstructions;
+  clearInput;
+  handleTextInput;
+  handleUserTextInput;
+  createHeader;
+  escape;
+
+  textInput.addEventListener('input', (event) => {
+    showInstructions(event.target.value.trim());
+  });
+
+  textInput.addEventListener('input', handleTextInput);
+
+  userTextInput.addEventListener('keypress', handleUserTextInput);
+
+  document.addEventListener('keydown', escape);
+});
 
 module.exports = {
   showInstructions,
