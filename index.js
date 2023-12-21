@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   handleTextInput;
   handleUserTextInput;
   createHeader;
+  escape;
 
   textInput.addEventListener('input', (event) => {
     showInstructions(event.target.value.trim());
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
   textInput.addEventListener('input', handleTextInput);
 
   userTextInput.addEventListener('keypress', handleUserTextInput);
+
+  document.addEventListener('keydown', escape);
 });
 
 const showInstructions = (inputValue) => {
@@ -48,9 +51,19 @@ const handleUserTextInput = (event) => {
     createHeader(inputValue);
     clearInput(userTextInput);
     userTextInput.style.display = 'none';
-    textInput.style.display = 'block'; 
+    textInput.style.display = 'block';
   } else {
     console.log('error');
+  }
+}
+
+const escape = (event) => {
+  if(event.key === 'Escape'){
+    clearInput(userTextInput);
+    userTextInput.style.display = 'none';
+    textInput.style.display = 'block';
+    instructions.style.display = 'none';
+    textInput.value = '';
   }
 }
 
@@ -65,5 +78,6 @@ module.exports = {
   clearInput,
   handleTextInput,
   handleUserTextInput,
-  createHeader
+  createHeader,
+  escape
 };

@@ -3,7 +3,8 @@ const {
   clearInput,
   handleTextInput,
   handleUserTextInput,
-  createHeader
+  createHeader,
+  escape
 } = require('./index');
 
 document.body.innerHTML = `
@@ -105,6 +106,22 @@ describe('createHeader function', () => {
   
       expect(createdHeader).not.toBeNull();
       expect(createdHeader.textContent).toBe('Test Header');
+    });
+  });
+});
+
+describe('Escape function', () => {
+  test('it should return all styles back to default', () => {
+    document.addEventListener('DOMContentLoaded', () => {
+      const textInput = document.querySelector('#header-text-input');
+      const instructions = document.querySelector('.instruction-card');
+      const userTextInput = document.querySelector('.user-header-input');
+
+      escape({ key: 'Escape' });
+
+      expect(textInput.style.display).toBe('block');
+      expect(instructions.style.display).toBe('none');
+      expect(userTextInput.style.display).toBe('none');
     });
   });
 });
