@@ -19,8 +19,8 @@
       }]
     },
     "ignorePatterns": [
-      "dist/",
-      "build/"
-    ]
+        "dist/",
+        "build/",
+        "index.js"
+      ]
   }
-  
