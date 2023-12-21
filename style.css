@@ -44,7 +44,7 @@ li {
   align-items: center;
   padding: 20px;
   color: var(--font-clr-light);
-  font-size: 14.5px;
+  font-size: 13.5px;
 }
 
 .navigation .nav-section {
@@ -62,7 +62,7 @@ li {
 
 .nav-span {
   margin-right: 25px;
-  font-size: 18px;
+  font-size: 17px;
   color: #343434;
 }
 
@@ -77,7 +77,7 @@ li {
 }
 
 .publish-icon {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
@@ -93,8 +93,8 @@ main {
   justify-content: space-between;
   align-items: center;
   color: var(--font-clr-light);
-  border: 1.52px solid rgb(195, 194, 194);
-  padding: 2.5px 8px;
+  border: 1.5px solid rgb(195, 194, 194);
+  padding: 2px 8px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -116,7 +116,7 @@ main {
 .green-p {
   color: var(--font-clr-green);
   background: rgba(154, 246, 192, 0.5);
-  font-size: 16px;
+  font-size: 15px;
   padding: 3px 5px;
   margin-right: 5px;
   border-radius: 3px;
@@ -162,7 +162,7 @@ img {
 
 .title {
   font-weight: 800;
-  font-size: 46px;
+  font-size: 40px;
   margin-block: 30px;
   color: #1a1a1a;
 }
@@ -183,7 +183,7 @@ img {
 }
 
 .user-header {
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'ROBOTO', sans-serif;
   color: #1a1a1a;
   margin-block: 40px 0;
@@ -213,7 +213,7 @@ input {
 
 input::placeholder {
   font-family: 'ROBOTO', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: #bec3c5;
 }
 
@@ -228,7 +228,7 @@ input::placeholder {
 }
 
 .instruction-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   color: #1a1a1a;
 }
@@ -268,7 +268,7 @@ input::placeholder {
 }
 
 .header-select .span {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   color: rgb(201, 200, 200);
   margin-right: 10px;
