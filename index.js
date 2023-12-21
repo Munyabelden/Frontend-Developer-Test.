@@ -15,10 +15,16 @@ const clearInput = (inputElement) => {
   inputElement.value = '';
 }
 
+const createHeader = (input) => {
+  const h1Element = document.createElement('h1');
+  h1Element.textContent = input;
+  userHeader.appendChild(h1Element);
+}
+
 const handleTextInput = (event) => {
   const inputValue = event.target.value.trim();
 
-  if (inputValue === '/1') {
+  if(inputValue === '/1') {
     userTextInput.style.display = 'block';
     instructions.style.display = 'none';
     textInput.blur();
@@ -28,13 +34,11 @@ const handleTextInput = (event) => {
 
 const handleUserTextInput = (event) => {
   const inputValue = event.target.value.trim();
-  if (event.key === 'Enter' && inputValue !== '') {
+  if(event.key === 'Enter' && inputValue !== '') {
     createHeader(inputValue);
     clearInput(userTextInput);
     userTextInput.style.display = 'none';
     textInput.style.display = 'block';
-  } else {
-    console.log('error');
   }
 }
 
@@ -46,12 +50,6 @@ const escape = (event) => {
     instructions.style.display = 'none';
     textInput.value = '';
   }
-}
-
-const createHeader = (input) => {
-  const h1Element = document.createElement('h1');
-  h1Element.textContent = input;
-  userHeader.appendChild(h1Element);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

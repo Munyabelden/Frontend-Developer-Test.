@@ -84,16 +84,6 @@ describe('handleUserTextInput function', () => {
       expect(userTextInput.value).toBe('');
     });
   });
-
-  test('it logs an error when Enter key is pressed with an empty input', () => {
-    document.addEventListener('DOMContentLoaded', () => {
-      const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-      handleUserTextInput({ key: 'Enter', target: { value: '' } });
-  
-      expect(consoleSpy).toHaveBeenCalledWith('error');
-      consoleSpy.mockRestore();
-    });
-  });
 });
 
 describe('createHeader function', () => {
