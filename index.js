@@ -6,6 +6,22 @@ const textInput = document.querySelector('#header-text-input');
 const instructions = document.querySelector('.instruction-card');
 const userTextInput = document.querySelector('.user-header-input');
 
+document.addEventListener('DOMContentLoaded', () => {
+  showInstructions;
+  clearInput;
+  handleTextInput;
+  handleUserTextInput;
+  createHeader;
+  // Event listeners for input and keypress events
+  textInput.addEventListener('input', (event) => {
+    showInstructions(event.target.value.trim()); // Show/hide instructions based on input
+  });
+
+  textInput.addEventListener('input', handleTextInput); // Listen for keypress in main text input
+
+  userTextInput.addEventListener('keypress', handleUserTextInput); // Listen for keypress in user input
+});
+
 // Function to show or hide instructions based on input value
 const showInstructions = (inputValue) => {
   instructions.style.display = (inputValue === '/' || inputValue === '/1') ? 'block' : 'none';
@@ -52,11 +68,11 @@ const createHeader = (input) => {
   userHeader.appendChild(h1Element);
 }
 
-// Event listeners for input and keypress events
-textInput.addEventListener('input', (event) => {
-  showInstructions(event.target.value.trim()); // Show/hide instructions based on input
-});
-
-textInput.addEventListener('input', handleTextInput); // Listen for keypress in main text input
-
-userTextInput.addEventListener('keypress', handleUserTextInput); // Listen for keypress in user input
+// In your source file (index.js or relevant file)
+module.exports = {
+  showInstructions,
+  clearInput,
+  handleTextInput,
+  handleUserTextInput,
+  createHeader
+};

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Munyabelden/Head_text_Test#readme",
   "devDependencies": {
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^21.1.1"
   }
 }

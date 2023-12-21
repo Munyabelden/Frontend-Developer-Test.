@@ -143,6 +143,7 @@ main {
 
 .dots {
   color: #474747;
+  margin-inline: 5px 10px;
 }
 
 .left {
