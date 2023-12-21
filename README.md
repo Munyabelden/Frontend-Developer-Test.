@@ -30,16 +30,16 @@
 
 # 📖 [Frontend-Developer-Test] <a name="about-project"></a>
 
-**[Frontend-Developer-Test]** is An interactive web app that empowers users to input text and instantly transform it into an HTML <h1> heading. Utilizing JavaScript, HTML, and CSS, this app offers a user-friendly interface where individuals can type in their desired text, and upon a specific action (e.g. hitting 'Enter'), the text is rendered as a prominent and stylized header on the screen.
+**[Frontend-Developer-Test]** is An interactive web app that empowers users to input text and instantly transform it into an HTML h1 heading. Utilizing JavaScript, HTML, and CSS, this app offers a user-friendly interface where individuals can type in their desired text, and upon a specific action (e.g. hitting 'Enter'), the text is rendered as a prominent and stylized header on the screen.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-[ ] JavaScript
-[ ] CSS
-[ ] HTML5
-[ ] Jest
+- [ ] JavaScript
+- [ ] CSS
+- [ ] HTML5
+- [ ] Jest
 
 
 ### Key Features <a name="key-features"></a>
@@ -159,7 +159,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://munyabelden.github.io/Head_text_Test/issues/).
+Feel free to check the [issues page](https://github.com/Munyabelden/Head_text_Test/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
