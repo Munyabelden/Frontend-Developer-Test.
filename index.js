@@ -21,8 +21,8 @@ const clearInput = (inputElement) => {
 const handleTextInput = (event) => {
   const inputValue = event.target.value.trim();
 
-  // When 'Enter' key is pressed and input matches '/1'
-  if (event.key === 'Enter' && inputValue === '/1') {
+  // When input matches '/1'
+  if (inputValue === '/1') {
     userTextInput.style.display = 'block';
     instructions.style.display = 'none';
     textInput.blur();
@@ -57,6 +57,6 @@ textInput.addEventListener('input', (event) => {
   showInstructions(event.target.value.trim()); // Show/hide instructions based on input
 });
 
-textInput.addEventListener('keypress', handleTextInput); // Listen for keypress in main text input
+textInput.addEventListener('input', handleTextInput); // Listen for keypress in main text input
 
 userTextInput.addEventListener('keypress', handleUserTextInput); // Listen for keypress in user input

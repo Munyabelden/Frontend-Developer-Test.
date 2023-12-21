@@ -4,51 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c373984c3f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Frontend Developer Test: Munyaradzi Belden Mugauri</title>
 </head>
 <body>
     <header>
-
+      <nav class="navigation font-family">
+        <div class="nav-section">
+            <span class="nav-span">&raquo;</span>
+            <ul class="">
+                <li class="font-weight"><span class="icon"><i class="fa-solid fa-book-open"></i></span>Main</li> /
+                <li class="font-weight-light">Getting Started</li> /
+                <li class="font-weight-light">Front-end developer test proje...</li>
+            </ul>
+        </div>
+        <ul class="nav-section">
+            <li class="editing font-weight-light"><span class="icon"><i class="fa-solid fa-lock-open"></i></span>Editing</li>
+            <li class="publish font-weight">Publish Space  <span class="publish-icon font-family-odd">v</span></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section>
+      <section class="top-bar font-family">
         <div>
-            <span>P</span>
-            <p><span><i class="fa-regular fa-clock"></i></span> 0min</p>
-            <span>0</span>
+          <span class="green-p font-weight">P</span> <span class="line">|</span>
+          <p><span><i class="fa-regular fa-clock"></i></span> 0min</p><span class="line">|</span>
+          <img src="images/rabbit.png" alt="" srcset=""><span class="line">|</span>
+          <span>0</span>
         </div>
         <div>
-            <i class="fa-solid fa-check"></i>
-            <div>.</div>
-            <i class="fa-solid fa-cloud"></i>
+          <i class="fa-solid fa-check"></i>
+          <i class="fa-solid fa-cloud cloud"></i>
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
         </div>
       </section>
       <section>  
-        <h1>Front-end Developer Test Project</h1>
-        <p>Create an H1 by simple typing / then 1, then typing text and hit enter, and Hallelujah you have created a header</p>
+        <h1 class="title font-family">Front-end Developer Test Project</h1>
+        <p class="guide font-family">Create an H1 by simply typing / then 1, then typing the text you want and hit enter, and you have created your own header.Go ahead and get started, see how it works... </p>
         <div class="user-header"></div>
         <form action="#" class="form" id="form">
             <input type="text" name="text" id="header-text-input" class="header-text-input" placeholder="Type / for blocks, @ to link docs or people">
             <input type="text" name="header-text" id="user-header-input" class="user-header-input" placeholder="Heading 1">
         </form>
         <div class="instruction-card">
-            <h2>Add blocks</h2>
-            <p>Keep typing to filter, or escape to exit</p>
-            <h3>Filtering keyword <span>1</span></h3>
-            <div>
-                <span>T</span>
+            <h2 class="instruction-title font-family">Add blocks</h2>
+            <p class="title-p font-family">Keep typing to filter, or escape to exit</p>
+            <h3 class="font-family filter">Filtering keyword <span>1</span></h3>
+            <div class="header-select select">
+                <span class="span">T</span>
                 <div>
-                    <h4>Heading 1</h4>
-                     <span>Shortcut: type # + space</span>
+                    <h4 class="font-family">Heading 1</h4>
+                     <span class="font-family title-p">Shortcut: type # + space</span>
                 </div>
             </div>
-            <div>
-                <span>T</span>
+            <div class="header-select">
+                <span class="span">T</span>
                 <div>
-                    <h4>Expandable Heading 1</h4>
-                     <span>Shortcut: type >># + space</span>
+                    <h4 class="font-family">Expandable Heading 1</h4>
+                     <span class="font-family title-p">Shortcut: type >># + space</span>
                 </div>
             </div>
         </div>
