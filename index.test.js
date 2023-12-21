@@ -1,4 +1,3 @@
-// Importing the necessary functions from the file being tested
 const {
   showInstructions,
   clearInput,
@@ -7,7 +6,6 @@ const {
   createHeader
 } = require('./index');
 
-// Mocking the necessary DOM elements
 document.body.innerHTML = `
   <div class="user-header"></div>
   <form action="#" class="form" id="form">
